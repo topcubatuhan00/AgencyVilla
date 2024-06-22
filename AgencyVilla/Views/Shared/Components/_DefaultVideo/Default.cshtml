@@ -1,0 +1,36 @@
+﻿@model List<ResultVideoDto>
+
+
+<div class="video section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="section-heading text-center">
+                    <h6>| Video Görünümü</h6>
+                    <h2>Daha Yakından Görün ve Farklı Hissedin</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="video-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                @{
+                    string url = "https://www.youtube.com/embed/";
+                }
+                @foreach (var item in Model)
+                {
+                    var splitLeft = item.VideoUrl.Split("?v=");
+                    var splitRes = splitLeft[1].Split("&")[0];
+                    url += splitRes;
+                    <div class="video-frame" style="border-radius:20px;display:flex;justify-content:center;align-items:center">
+                        <iframe style="border-radius:20px" width="750" height="415" src="@url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
