@@ -12,4 +12,5 @@ public interface IGenericService<T> where T : class
     Task<T> TGetByIdAsync(ObjectId id);
     Task<int> TCountAsync();
     Task<List<T>> TGetFilteredAsync(Expression<Func<T, bool>> predicate);
+    Task<T> TGetLastAsync();
 }

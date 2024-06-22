@@ -19,8 +19,8 @@ public class _DefaultFeature : ViewComponent
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var result = await _featureService.TGetListAsync();
-        var mappedResult = _mapper.Map<List<ResultFeatureDto>>(result);
-        return View(mappedResult);
+        var result = await _featureService.TGetLastAsync();
+        var mapped = _mapper.Map<ResultFeatureDto>(result);
+        return View(mapped);
     }
 }

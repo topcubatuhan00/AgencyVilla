@@ -1,5 +1,6 @@
 ﻿using AgencyVilla.Business.Abstract;
 using AgencyVilla.DataAccess.Abstract;
+using AgencyVilla.Entity.Entities;
 using MongoDB.Bson;
 using System.Linq.Expressions;
 
@@ -35,6 +36,13 @@ public class GenericService<T> : IGenericService<T> where T : class
     public async Task<T> TGetByIdAsync(ObjectId id)
     {
         return await _genericDal.GetByIdAsync(id);
+    }
+
+    public async Task<T> TGetLastAsync()
+    {
+        var data = await _genericDal.GetListAsync();
+        var mapped = data[data.Count-1];
+        return mapped;
     }
 
     public async Task<List<T>> TGetFilteredAsync(Expression<Func<T, bool>> predicate)
