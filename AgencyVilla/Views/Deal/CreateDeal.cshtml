@@ -1,0 +1,45 @@
+﻿@model CreateDealDto
+@{
+    ViewData["Title"] = "Teklif Oluştur";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>İlan Türü</label>
+    <input type="text" placeholder="İlan Türü" asp-for="Type" class="form-control" />
+    <br />
+
+    <label>Resim Url</label>
+    <input type="text" placeholder="Resim Url" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Başlık</label>
+    <input type="text" placeholder="Başlık" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" placeholder="Açıklama" asp-for="Description" class="form-control" />
+    <br />
+
+    <label>Kaç M2?</label>
+    <input type="text" placeholder="M2" asp-for="Square" class="form-control" />
+    <br />
+
+    <label>Kat Sayısı</label>
+    <input type="text" placeholder="Kat Sayısı" asp-for="Floor" class="form-control" />
+    <br />
+
+    <label>Oda Sayısı</label>
+    <input type="number" placeholder="Oda Sayısı" asp-for="RoomCount" class="form-control" />
+    <br />
+
+    <label>Park Alanı Var mı?</label>
+    <input type="checkbox" placeholder="Park Alanı Var mı?" asp-for="HasParkingArea" class="form-control" />
+    <br />
+
+    <label>Ödeme Türü</label>
+    <input type="text" placeholder="Ödeme Türü" asp-for="PaymentType" class="form-control" />
+    <br />
+    <button class="btn btn-outline-success">Kaydet</button>
+</form>
+

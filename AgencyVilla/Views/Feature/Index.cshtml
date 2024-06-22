@@ -1,0 +1,61 @@
+﻿@model List<ResultFeatureDto>
+@{
+    ViewData["Title"] = "Önce Çıkanlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th class="text-dark">#</th>
+        <th class="text-dark">Resim</th>
+        <th class="text-dark">Başlık</th>
+        <th class="text-dark">Alt Başlık</th>
+        <th class="text-dark">M2</th>
+        <th class="text-dark">Kontrat</th>
+        <th class="text-dark">Ödeme Yöntemi</th>
+        <th class="text-dark">Güvenlik</th>
+        <th class="text-dark">İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th class="text-dark">@count</th>
+            <td class="text-dark text-center"><img src="@item.ImageUrl" style="height:100px" /></td>
+            <td class="text-dark">@item.Title</td>
+            <td class="text-dark">@item.SubTitle</td>
+            <td class="text-dark">@item.Square</td>
+            <td class="text-dark">@item.Contract</td>
+            <td class="text-dark">@item.Payment</td>
+            <td class="text-dark">@item.Safety</td>
+            <td>
+                <button onclick="deleteFeature(this)" id="@item.Id" class="btn btn-outline-danger">Sil</button>
+                <a asp-controller="Feature" asp-action="UpdateFeature" asp-route-id="@item.Id" class="btn btn-outline-warning">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-controller="Feature" asp-action="CreateFeature" class="btn btn-outline-dark">Yeni Öne Çıkan Ekle</a>
+<script>
+    const deleteFeature = (button) => {
+        var id = button.getAttribute("id");
+        Swal.fire({
+            title: "Silmek İstediğinize Emin misiniz?",
+            text: "Bu İşlem Geri Alınamaz!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Evet, sil!",
+            cancelButtonText: "Vazgeç"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Feature/DeleteFeature/" + id;
+            }
+        });
+    };
+</script>
+
+

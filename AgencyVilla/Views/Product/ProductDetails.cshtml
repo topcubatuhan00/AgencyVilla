@@ -1,0 +1,46 @@
+﻿@model ResultProductDto
+@{
+    ViewData["Title"] = "Mülk Detayı";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table table-striped">
+    <tr>
+        <th class="text-dark">Başlık : </th>
+        <td class="text-dark">@Model.Title</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Resim : </th>
+        <td class="text-dark"><img src="@Model.ImageUrl" style="height:150px"/></td>
+    </tr>
+    <tr>
+        <th class="text-dark">Kategori : </th>
+        <td class="text-dark">@Model.Category</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Fiyat : </th>
+        <td class="text-dark">@Model.Price ₺</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Alan (m2) : </th>
+        <td class="text-dark">@Model.Area</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Yatak Odası Sayısı : </th>
+        <td class="text-dark">@Model.BedroomCount</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Banyo Sayısı : </th>
+        <td class="text-dark">@Model.BathroomCount</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Kat Sayısı : </th>
+        <td class="text-dark">@Model.Floor</td>
+    </tr>
+    <tr>
+        <th class="text-dark">Park Alanı Adedi : </th>
+        <td class="text-dark">@Model.ParkingCount</td>
+    </tr>
+</table>
+
+<a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark">Mülklere Geri Dön</a>
+

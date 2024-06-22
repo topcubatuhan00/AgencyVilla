@@ -1,0 +1,15 @@
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\bin\Debug\net7.0\AgencyVilla.DataAccess.deps.json
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\bin\Debug\net7.0\AgencyVilla.DataAccess.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\bin\Debug\net7.0\AgencyVilla.DataAccess.pdb
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\bin\Debug\net7.0\AgencyVilla.Entity.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\bin\Debug\net7.0\AgencyVilla.Entity.pdb
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.csproj.AssemblyReference.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.AssemblyInfoInputs.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.AssemblyInfo.cs
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.csproj.CopyComplete
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\refint\AgencyVilla.DataAccess.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\AgencyVilla.DataAccess.pdb
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.DataAccess\obj\Debug\net7.0\ref\AgencyVilla.DataAccess.dll

@@ -1,0 +1,58 @@
+﻿@model List<ResultSubHeaderDto>
+@{
+    ViewData["Title"] = "Üst Bilgi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th class="text-dark">#</th>
+        <th class="text-dark">Adres</th>
+        <th class="text-dark">Email</th>
+        <th class="text-dark">Facebook</th>
+        <th class="text-dark">Instagram</th>
+        <th class="text-dark">Twitter</th>
+        <th class="text-dark">Linkedin</th>
+        <th class="text-dark">İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th class="text-dark">@count</th>
+            <td class="text-dark">@item.Address</td>
+            <td class="text-dark">@item.Email</td>
+            <td class="text-dark"><a href="@item.Facebook" target="_blank">Facebook</a></td>
+            <td class="text-dark"><a href="@item.Instagram" target="_blank">Instagram</a></td>
+            <td class="text-dark"><a href="@item.Twitter" target="_blank">Twitter</a></td>
+            <td class="text-dark"><a href="@item.Linkedin" target="_blank">Linkedin</a></td>
+            <td>
+                <button onclick="deleteSubHeader(this)" id="@item.Id" class="btn btn-outline-danger">Sil</button>
+                <a asp-controller="SubHeader" asp-action="UpdateSubHeader" asp-route-id="@item.Id" class="btn btn-outline-warning">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-controller="SubHeader" asp-action="CreateSubHeader" class="btn btn-outline-dark">Yeni Banner Ekle</a>
+<script>
+    const deleteSubHeader = (button) => {
+        var id = button.getAttribute("id");
+        Swal.fire({
+            title: "Silmek İstediğinize Emin misiniz?",
+            text: "Bu İşlem Geri Alınamaz!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Evet, sil!",
+            cancelButtonText: "Vazgeç"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/SubHeader/DeleteSubHeader/" + id;
+            }
+        });
+    };
+</script>
+

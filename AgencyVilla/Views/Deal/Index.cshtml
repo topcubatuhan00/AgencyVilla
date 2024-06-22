@@ -1,0 +1,74 @@
+﻿@model List<ResultDealDto>
+@{
+    ViewData["Title"] = "Teklifler";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+        var park = "";
+    }
+    <tr>
+        <th class="text-dark">#</th>
+        <th class="text-dark">İlan Türü</th>
+        <th class="text-dark">Resim</th>
+        <th class="text-dark">Başlık</th>
+        <th class="text-dark">Açıklama</th>
+        <th class="text-dark">M2</th>
+        <th class="text-dark">Kat Sayısı</th>
+        <th class="text-dark">Oda Sayısı</th>
+        <th class="text-dark">Park Alanı Var mı?</th>
+        <th class="text-dark">Ödeme Türü</th>
+        <th class="text-dark">İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        if (item.HasParkingArea)
+        {
+            park = "Evet";
+        }
+        else
+        {
+            park = "Hayır";
+        }
+        <tr>
+            <th class="text-dark">@count</th>
+            <td class="text-dark">@item.Type</td>
+            <td class="text-dark text-center"><img src="@item.ImageUrl" style="height:100px" /></td>
+            <td class="text-dark">@item.Title</td>
+            <td class="text-dark">@item.Description</td>
+            <td class="text-dark">@item.Square</td>
+            <td class="text-dark">@item.Floor</td>
+            <td class="text-dark">@item.RoomCount</td>
+            <td class="text-dark">@park</td>
+            <td class="text-dark">@item.PaymentType</td>
+            <td>
+                <button onclick="deleteDeal(this)" id="@item.Id" class="btn btn-outline-danger">Sil</button>
+                <a asp-controller="Deal" asp-action="UpdateDeal" asp-route-id="@item.Id" class="btn btn-outline-warning">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-controller="Deal" asp-action="CreateDeal" class="btn btn-outline-dark">Yeni Teklif Ekle</a>
+<script>
+    const deleteDeal = (button) => {
+        var id = button.getAttribute("id");
+        Swal.fire({
+            title: "Silmek İstediğinize Emin misiniz?",
+            text: "Bu İşlem Geri Alınamaz!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Evet, sil!",
+            cancelButtonText:"Vazgeç"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Deal/DeleteDeal/" + id;
+            }
+        });
+    };
+</script>
+
+

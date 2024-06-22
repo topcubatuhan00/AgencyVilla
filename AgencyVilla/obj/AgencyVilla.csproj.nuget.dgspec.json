@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla\\AgencyVilla.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\AgencyVilla.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\AgencyVilla.Business.csproj",
+        "projectName": "AgencyVilla.Business",
+        "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\AgencyVilla.Business.csproj",
+        "packagesPath": "C:\\Users\\topcu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj"
+              },
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj",
+        "projectName": "AgencyVilla.DataAccess",
+        "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\topcu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "MongoDB.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0-preview.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj",
+        "projectName": "AgencyVilla.Dto",
+        "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj",
+        "packagesPath": "C:\\Users\\topcu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj",
+        "projectName": "AgencyVilla.Entity",
+        "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\AgencyVilla.Entity.csproj",
+        "packagesPath": "C:\\Users\\topcu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla\\AgencyVilla.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla\\AgencyVilla.csproj",
+        "projectName": "AgencyVilla",
+        "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla\\AgencyVilla.csproj",
+        "packagesPath": "C:\\Users\\topcu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\AgencyVilla.Business.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Business\\AgencyVilla.Business.csproj"
+              },
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.DataAccess\\AgencyVilla.DataAccess.csproj"
+              },
+              "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj": {
+                "projectPath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

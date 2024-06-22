@@ -1,0 +1,16 @@
+﻿@model CreateCounterDto
+@{
+    ViewData["Title"] = "Sayaç Oluştur";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" placeholder="Başlık" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Sayı</label>
+    <input type="text" placeholder="Sayı" asp-for="Count" class="form-control" />
+    <br />
+    <button class="btn btn-outline-success">Kaydet</button>
+</form>
+

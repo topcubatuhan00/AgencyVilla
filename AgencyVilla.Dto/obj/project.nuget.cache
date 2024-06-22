@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8K3DnKzJ7GgAW9qZL2sim9zr2s81cIQoAEcV/a30xLEi69z00cW2M3blv/yigPHG0l2poMoT+PwsIJLxlzCdLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\topcu\\OneDrive\\Masaüstü\\Agncy\\AgencyVilla.Dto\\AgencyVilla.Dto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\topcu\\.nuget\\packages\\mongodb.bson\\2.26.0\\mongodb.bson.2.26.0.nupkg.sha512",
+    "C:\\Users\\topcu\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\topcu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

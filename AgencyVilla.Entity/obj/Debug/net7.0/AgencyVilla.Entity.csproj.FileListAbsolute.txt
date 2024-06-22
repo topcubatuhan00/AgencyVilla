@@ -1,0 +1,12 @@
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\bin\Debug\net7.0\AgencyVilla.Entity.deps.json
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\bin\Debug\net7.0\AgencyVilla.Entity.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\bin\Debug\net7.0\AgencyVilla.Entity.pdb
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.csproj.AssemblyReference.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.AssemblyInfoInputs.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.AssemblyInfo.cs
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.csproj.CoreCompileInputs.cache
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\refint\AgencyVilla.Entity.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\AgencyVilla.Entity.pdb
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla.Entity\obj\Debug\net7.0\ref\AgencyVilla.Entity.dll

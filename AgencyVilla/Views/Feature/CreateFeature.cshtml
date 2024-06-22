@@ -1,0 +1,38 @@
+﻿@model CreateFeatureDto
+@{
+    ViewData["Title"] = "Önce Çıkan Oluştur";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<form method="post">
+    <label>Resim Url</label>
+    <input type="text" placeholder="Resim Url" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Başlık</label>
+    <input type="text" placeholder="Başlık" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Alt Başlık</label>
+    <input type="text" placeholder="Alt Başlık" asp-for="SubTitle" class="form-control" />
+    <br />
+
+    <label>Kaç M2?</label>
+    <input type="text" placeholder="M2" asp-for="Square" class="form-control" />
+    <br />
+
+    <label>Kontrat</label>
+    <input type="text" placeholder="Kontrat" asp-for="Contract" class="form-control" />
+    <br />
+
+    <label>Ödeme Türü</label>
+    <input type="text" placeholder="Ödeme Türü" asp-for="Payment" class="form-control" />
+    <br />
+
+    <label>Güvenlik Var mı?</label>
+    <input type="text" placeholder="Güvenlik Var mı?" asp-for="Safety" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-success">Kaydet</button>
+</form>
+
+
