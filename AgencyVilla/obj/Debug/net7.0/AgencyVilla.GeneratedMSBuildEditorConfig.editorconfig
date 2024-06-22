@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/topcu/OneDrive/Masaüstü/Agncy/AgencyVilla/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/topcu/OneDrive/Masaüstü/Agncy/AgencyVilla/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/topcu/OneDrive/Masaüstü/Agncy/AgencyVilla/Views/Banner/CreateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXENyZWF0ZUJhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

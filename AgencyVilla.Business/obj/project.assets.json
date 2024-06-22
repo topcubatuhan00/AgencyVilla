@@ -640,6 +640,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.16",
           "MongoDB.Bson": "2.26.0"
         },
         "compile": {

@@ -4,6 +4,7 @@ using AgencyVilla.DataAccess.Abstract;
 using AgencyVilla.DataAccess.Context;
 using AgencyVilla.DataAccess.EntityFramefork;
 using AgencyVilla.DataAccess.Repositories;
+using AgencyVilla.Entity.Entities;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
@@ -44,6 +45,8 @@ builder.Services.AddDbContext<AgencyVillaContext>(opt =>
     opt.UseMongoDB(mongoDb.Client, mongoDb.DatabaseNamespace.DatabaseName);
 });
 
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AgencyVillaContext>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -63,6 +66,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

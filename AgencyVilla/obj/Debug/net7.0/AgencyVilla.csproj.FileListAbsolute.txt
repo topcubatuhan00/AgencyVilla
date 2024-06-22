@@ -248,3 +248,10 @@ C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\obj\Debug\net7.0\refint\Age
 C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\obj\Debug\net7.0\AgencyVilla.pdb
 C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\obj\Debug\net7.0\AgencyVilla.genruntimeconfig.cache
 C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\obj\Debug\net7.0\ref\AgencyVilla.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\topcu\OneDrive\Masaüstü\Agncy\AgencyVilla\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

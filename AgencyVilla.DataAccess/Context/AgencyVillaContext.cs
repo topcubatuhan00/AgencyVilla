@@ -1,10 +1,12 @@
 ﻿using AgencyVilla.Entity.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace AgencyVilla.DataAccess.Context;
 
-public class AgencyVillaContext : DbContext
+public class AgencyVillaContext : IdentityDbContext<AppUser, AppRole, ObjectId>
 {
     public AgencyVillaContext
     (DbContextOptions options) : base (options){}
@@ -22,16 +24,17 @@ public class AgencyVillaContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Banner>().ToCollection("Banners");
-        modelBuilder.Entity<Contact>().ToCollection("Contacts");
-        modelBuilder.Entity<Counter>().ToCollection("Counters");
-        modelBuilder.Entity<Deal>().ToCollection("Deals");
-        modelBuilder.Entity<Feature>().ToCollection("Features");
-        modelBuilder.Entity<Message>().ToCollection("Messages");
-        modelBuilder.Entity<Product>().ToCollection("Products");
-        modelBuilder.Entity<Quest>().ToCollection("Quests");
-        modelBuilder.Entity<Video>().ToCollection("Videos");
-        modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
+        base.OnModelCreating(modelBuilder);
+        //modelBuilder.Entity<Banner>().ToCollection("Banners");
+        //modelBuilder.Entity<Contact>().ToCollection("Contacts");
+        //modelBuilder.Entity<Counter>().ToCollection("Counters");
+        //modelBuilder.Entity<Deal>().ToCollection("Deals");
+        //modelBuilder.Entity<Feature>().ToCollection("Features");
+        //modelBuilder.Entity<Message>().ToCollection("Messages");
+        //modelBuilder.Entity<Product>().ToCollection("Products");
+        //modelBuilder.Entity<Quest>().ToCollection("Quests");
+        //modelBuilder.Entity<Video>().ToCollection("Videos");
+        //modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
     }
 
 }
